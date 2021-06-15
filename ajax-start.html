@@ -61,7 +61,13 @@
     </pre>
 
     <script>
+      const verseChoose = document.querySelector('select');
+      const poemDisplay = document.querySelector('pre');
 
+      verseChoose.onchange = function() {
+        const verse = verseChoose.value;
+        updateDisplay(verse);
+      };
     </script>
   </body>
 </html>
